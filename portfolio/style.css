@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cabecalho__menu {
+    padding: 1.5% 0 0 9%;
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #22D4FD;
+}
+
+.cabecalho__menu__link:hover {
+    transform: scale(1.05);
+}
+
+.destaque_nome {
+    color: #22D4FD;
+}
+
+.nome {
+    padding: 2% 10.5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.texto {
+    font-size: 24px;
+    margin-bottom: -4%;
+    text-align: justify;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.botoes_redes_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 60%;
+    color: #F6F6F6;
+    text-align: center;
+    border: 2px solid #22D4FD;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botoes_redes_sociais:hover {
+    background-color: #272727;
+    transform: scale(1.01);
+}
+
+.imagem_redes_sociais {
+    width: 29px;
+}
+
+.texto_botoes {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foto-container {
+    width: 40%;
+    text-align: center;
+}
+
+.foto_perfil {
+    width: 100%;
+    transition: transform 0.2s;
+
+}
+
+.foto_perfil:hover {
+    transform: scale(1.01);
+
+}
+
+.foto_legenda {
+    color: #F6F6F6;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: none;
+    color: inherit;
+}
+
+.foto_legenda:hover {
+    text-decoration: underline;
+}
+
+.rodape {
+    color: #000000;
+    background-color: #22D4FD;
+    display: flex;
+    justify-content: center;
+    padding: 0.5%;
+    border-radius: 5%;
+    font-size: small;
+    font-family: 'Krona One', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nome {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .foto-container {
+        width: 80%;
+    }
+
+    .foto_perfil {
+        width: 60%;
+    }
+
+    .botoes_redes_sociais {
+        width: 100%;
+    }
+}
