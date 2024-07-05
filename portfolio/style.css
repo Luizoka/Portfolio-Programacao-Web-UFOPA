@@ -32,11 +32,7 @@ body {
     transform: scale(1.05);
 }
 
-.destaque-nome {
-    color: #22D4FD;
-}
-
-.nome {
+.apresentacao {
     padding: 2% 10.5%;
     display: flex;
     align-items: flex-start;
@@ -50,6 +46,10 @@ body {
     flex-direction: column;
     gap: 40px;
     margin-top: 20px;
+}
+
+.destaque-nome {
+    color: #22D4FD;
 }
 
 .titulo {
@@ -128,18 +128,15 @@ body {
     text-decoration: underline;
 }
 
+/* Elementos extra da segunda pagina about.html*/
+
 .gostos-pessoais {
-    padding: 2% 0 0 10.5%;
-}
-
-.gosto-item {
-    gap: 10px;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: initial;
+    margin: 2% 0 0 10.5%;
 }
 
-summary {
+.gaveta-gostos {
     cursor: pointer;
     background-color: #000000;
     color: #FFFFFF;
@@ -151,28 +148,40 @@ summary {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 2% 0 0 11%;
 }
 
-summary:hover {
+.gaveta-gostos:hover {
     background-color: #0E96B5;
 }
 
-summary::-webkit-details-marker {
-    display: none;
+.conteudo-gostos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gosto-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
 }
 
 .gosto-item p {
     color: #F6F6F6;
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
 }
 
 .gosto-item img {
-    width: 40%;
+    width: 50%;
     object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1%;
+    display: block;
+    margin: 10px auto;
 }
 
 .inicio {
@@ -207,26 +216,86 @@ summary::-webkit-details-marker {
     font-family: 'Krona One', sans-serif;
 }
 
+/* Estilos Mobile */
 @media (max-width: 768px) {
-    .nome {
+    .cabecalho__menu {
         flex-direction: column;
         align-items: center;
-        padding: 5%;
+        padding: 1.5% 0;
+        gap: 10px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 5% 5%;
+        gap: 20px;
     }
 
     .conteudo {
         width: 100%;
+        gap: 20px;
+        margin-top: 10px;
     }
 
-    .foto-container {
-        width: 80%;
+    .titulo {
+        font-size: 24px;
+        text-align: center;
     }
 
-    .foto-perfil {
-        width: 60%;
+    .texto {
+        font-size: 18px;
+        text-align: justify;
     }
 
     .botoes-redes-sociais {
+        width: 80%;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .foto-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .foto-legenda {
+        font-size: 16px;
+    }
+
+    .gostos-pessoais {
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 5%;
+    }
+
+    .gaveta-gostos {
+        margin: 2% 0 0 5%;
         width: 100%;
+        text-align: center;
+    }
+
+    .conteudo-gostos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gosto-item {
+        width: 90%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .gosto-item p {
+        margin: 10;
+    }
+
+    .gosto-item img {
+        width: 50%;
+    }
+
+    .inicio {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
     }
 }
