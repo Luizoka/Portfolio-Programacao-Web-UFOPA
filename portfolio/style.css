@@ -140,25 +140,25 @@ body {
 }
 
 summary {
-    cursor: pointer; /* Altera o cursor para indicar que é clicável */
-    background-color: #000000; /* Cor de fundo */
-    color: #FFFFFF; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 8px; /* Borda arredondada */
-    border: 2px solid #22D4FD; /* Borda com a mesma cor de fundo para um efeito de botão */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-    max-width: 200px; /* Largura máxima do summary */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura máxima */
-    text-overflow: ellipsis; /* Adiciona reticências (...) ao texto que ultrapassa a largura */
-    white-space: nowrap; /* Impede a quebra de linha */
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #22D4FD;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 summary:hover {
-    background-color: #0E96B5; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #0E96B5;
 }
 
 summary::-webkit-details-marker {
-    display: none; /* Esconde o marcador padrão do detalhe no Chrome */
+    display: none;
 }
 
 .gosto-item p {
